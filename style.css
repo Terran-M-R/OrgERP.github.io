@@ -14,7 +14,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: Verdana, sans-serif;
-  padding-bottom: 200px;
   /*background-image: url('https://github.com/Terran-M-R/Terran-Roberson.github.io/blob/main/Portfolio%20Background%20w%20Gradient.jpg?raw=true');
   background-size: cover;
   background-position: center;
@@ -105,6 +104,8 @@ av a.active {
 .dashboard-section {
   padding: 60px 20px 200px 20px;
   background-color: #f8f9fa;
+  background-size: cover;
+  background-attachment: fixed;
   min-height: calc(100vh - 400px);
   margin-bottom: 100px;
 }
