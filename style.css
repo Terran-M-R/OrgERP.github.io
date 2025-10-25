@@ -97,3 +97,11 @@ av a.active {
   font-weight: 700;
 }
 
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
