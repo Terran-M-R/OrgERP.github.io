@@ -43,7 +43,8 @@ body {
 
 .websitetitle p {
   font-size: 1.5rem;
-  transform: translateX(300px);
+  font-style: italic; 
+  transform: translateX(320px);
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
 }
 
