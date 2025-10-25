@@ -103,7 +103,7 @@ av a.active {
 /* This section is a test for the dashboard for selecting ERPs. It is subject to change and be removed as well as customized! */
 
 .dashboard-section {
-  padding: 60px 20px 100px 20px;
+  padding: 60px 20px 200px 20px;
   background-color: #f8f9fa;
   min-height: calc(100vh - 400px);
   margin-bottom: 100px;
