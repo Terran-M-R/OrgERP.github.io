@@ -75,6 +75,32 @@ av a.active {
   font-weight: 700;
 }
 
+.social-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  justify-content: center;
+  transform: translateX(300px);
+}
+
+.social-links a {
+  padding: 12px 24px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #90e0ef;
+}
+
+
+
 
 footer {
   margin-top: auto;
@@ -82,4 +108,11 @@ footer {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.9);
 }
+
+
+
+
+
+
+
 
