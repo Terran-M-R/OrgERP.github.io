@@ -29,12 +29,13 @@ body {
   align-items: center;
   min-height: 100vh;
   text-align: center;
-  color: white; 
+  color: black; 
 }
 
 .websitetitle img {
   max-width: 100%;
   height: auto;
+  transform: translateX(300px);
   margin-bottom: 15px;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
   
@@ -43,14 +44,14 @@ body {
 .websitetitle p {
   font-size: 1.5rem;
   transform: translateX(300px);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
 }
 
 header {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: rgba(206, 19, 20, 1.0);
+  background-color: rgba(206, 19, 20, 0.9);
   padding: 20px;
   text-align: center;
   z-index: 100;
