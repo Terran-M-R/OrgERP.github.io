@@ -70,3 +70,30 @@ body {
   margin: 0;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  z-index: 100;
+}
+
+/* The navigation is part of the header. It is the word links to the other pages. Hover changes the way it looks when a mouse is over it. Active shows when 
+a the user is currently on the page. Ex: One the hompeage, the Home link is in bold. On HTML, I need to put class = active on each that is actually active. */
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: font-weight 0.2s;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+av a.active {
+  font-weight: 700;
+}
+
