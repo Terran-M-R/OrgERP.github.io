@@ -1,1 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Verdana, sans-serif;
+  /*background-image: url('https://github.com/Terran-M-R/Terran-Roberson.github.io/blob/main/Portfolio%20Background%20w%20Gradient.jpg?raw=true');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  color: #ffffff;
+}
