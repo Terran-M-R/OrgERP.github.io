@@ -102,9 +102,10 @@ av a.active {
 /* This section is a test for the dashboard for selecting ERPs. It is subject to change and be removed as well as customized! */
 
 .dashboard-section {
-  padding: 60px 20px;
+  padding: 60px 20px 100px 20px;
   background-color: #f8f9fa;
   min-height: calc(100vh - 400px);
+  margin-bottom: 100px;
 }
 
 .container {
@@ -154,7 +155,7 @@ av a.active {
   left: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ed4a4a 0%, #ff0000 100%);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -214,19 +215,19 @@ av a.active {
 
 /* Optional: Different accent colors for each module */
 .dashboard-card.finance:hover::before {
-  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  background: linear-gradient(135deg, #ed4a4a 0%, #ff0000 100%);
 }
 
 .dashboard-card.members:hover::before {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ed4a4a 0%, #ff0000 100%);
 }
 
 .dashboard-card.projects:hover::before {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: linear-gradient(135deg, #ed4a4a 0%, #ff0000 100%);
 }
 
 .dashboard-card.resources:hover::before {
-  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  background: linear-gradient(135deg, #ed4a4a 0%, #ff0000 100%);
 }
 
 @media (max-width: 768px) {
@@ -234,9 +235,6 @@ av a.active {
     grid-template-columns: 1fr;
   }
 }
-
-
-
 
 
 footer {
