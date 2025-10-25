@@ -53,22 +53,6 @@ body {
   line-height: 1.6;
 }
 
-.cta-button {
-  background-color: white;
-  color: #667eea;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.cta-button:hover {
-  transform: scale(1.05);
-}
-
 .hero-logo {
   flex: 0 0 350px;
   text-align: center;
@@ -83,7 +67,6 @@ body {
 
 .tagline {
   font-size: 1.1rem;
-  font-style: italic;
   margin: 0;
 }
 
