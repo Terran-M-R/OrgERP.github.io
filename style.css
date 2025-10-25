@@ -99,6 +99,143 @@ av a.active {
   color: #ce1314;
 }
 
+/* This section is a test for the dashboard for selecting ERPs. It is subject to change and be removed as well as customized! */
+
+.dashboard-section {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  min-height: calc(100vh - 400px);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.dashboard-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card:hover::before {
+  transform: scaleX(1);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.dashboard-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.dashboard-card p {
+  color: #666;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
+.stat {
+  font-size: 0.85rem;
+  color: #667eea;
+  font-weight: 600;
+}
+
+.card-arrow {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  color: #667eea;
+  transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover .card-arrow {
+  transform: translateX(5px);
+}
+
+/* Optional: Different accent colors for each module */
+.dashboard-card.finance:hover::before {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.dashboard-card.members:hover::before {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.dashboard-card.projects:hover::before {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.dashboard-card.resources:hover::before {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 
 
