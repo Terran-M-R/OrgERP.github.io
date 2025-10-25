@@ -52,7 +52,7 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: rgba(206, 19, 20, 0.9);
+  background-color: rgba(0, 0, 0, 0.9); /*rgba(206, 19, 20, 0.9);*/
   padding: 20px;
   text-align: center;
   z-index: 100;
@@ -80,6 +80,6 @@ footer {
   margin-top: auto;
   text-align: center;
   padding: 20px;
-  background-color: rgba(206, 19, 20, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
