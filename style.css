@@ -80,12 +80,12 @@ av a.active {
   gap: 20px;
   margin-top: 30px;
   justify-content: center;
-  transform: translateX(300px);
+  transform: translateX(-300px);
 }
 
 .social-links a {
   padding: 12px 24px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
   text-decoration: none;
   border-radius: 8px;
