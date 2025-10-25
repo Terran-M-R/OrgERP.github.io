@@ -22,23 +22,6 @@ body {
   color: #ffffff;
 }
 
-.hero-logo {
-  flex: 0 0 350px;
-  text-align: center;
-}
-
-.hero-logo img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 15px;
-  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
-}
-
-.tagline {
-  font-size: 1.1rem;
-  margin: 0;
-}
-
 .websitetitle {
   display: flex;
   flex-direction: column;
@@ -49,11 +32,11 @@ body {
   color: white; 
 }
 
-.websitetitle h1 {
-  font-size: 4rem;
-  margin-bottom: 5px;
-  transform: translateX(300px);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+.websitetitle img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
   
 }
 
