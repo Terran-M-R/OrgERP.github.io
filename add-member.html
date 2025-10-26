@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Member - ORG Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  
 
+  <div class="page-header">
+    <h1>Add New Member</h1>
+    <p>Register a new organization member</p>
+  </div>
+
+  <div class="page-content">
+    <div class="form-container">
+      <form id="memberForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" placeholder="member@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="(555) 123-4567">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="role">Role *</label>
+            <select id="role" required>
+              <option value="">Select a role</option>
+              <option value="President">President</option>
+              <option value="Vice President">Vice President</option>
+              <option value="Treasurer">Treasurer</option>
+              <option value="Secretary">Secretary</option>
+              <option value="Board Member">Board Member</option>
+              <option value="Committee Chair">Committee Chair</option>
+              <option value="Member">Member</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="status">Status *</label>
+            <select id="status" required>
+              <option value="Active">Active</option>
+              <option value="Inactive">Inactive</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="major">Major/Field of Study</label>
+          <input type="text" id="major" placeholder="e.g., Computer Science, Business">
+        </div>
+
+        <div class="form-group">
+          <label for="year">Academic Year</label>
+          <select id="year">
+            <option value="">Select year</option>
+            <option value="Freshman">Freshman</option>
+            <option value="Sophomore">Sophomore</option>
+            <option value="Junior">Junior</option>
+            <option value="Senior">Senior</option>
+            <option value="Graduate">Graduate Student</option>
+            <option value="Alumni">Alumni</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="joinDate">Join Date *</label>
+          <input type="date" id="joinDate" required>
+        </div>
+
+        <div class="form-group">
+          <label for="committees">Committees/Teams</label>
+          <input type="text" id="committees" placeholder="e.g., Events, Fundraising, Outreach">
+          <small class="form-hint">Separate multiple committees with commas</small>
+        </div>
+
+        <div class="form-group">
+          <label for="skills">Skills/Expertise</label>
+          <input type="text" id="skills" placeholder="e.g., Web Development, Marketing, Public Speaking">
+          <small class="form-hint">Separate multiple skills with commas</small>
+        </div>
+
+        <div class="form-group">
+          <label for="notes">Additional Notes</label>
+          <textarea id="notes" rows="3" placeholder="Any additional information about this member..."></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Add Member</button>
+          <a href="members.html" class="btn-secondary">Cancel</a>
+        </div>
+      </form>
+
+      <div id="successMessage" class="success-message" style="display: none;">
+        ✓ Member added successfully!
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="add-member.js"></script>
+</body>
+</html>
