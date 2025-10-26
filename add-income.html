@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Record Income - Houston Everything</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Your navbar here -->
+  
+  <div class="page-header">
+    <h1>Record Income</h1>
+    <p>Track fundraising, dues, and other revenue</p>
+  </div>
+
+  <div class="page-content">
+    <div class="form-container">
+      <form id="incomeForm">
+        <div class="form-group">
+          <label for="date">Date *</label>
+          <input type="date" id="date" required>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description *</label>
+          <input type="text" id="description" placeholder="e.g., Fall Semester Member Dues" required>
+        </div>
+
+        <div class="form-group">
+          <label for="category">Income Source *</label>
+          <select id="category" required>
+            <option value="">Select income source</option>
+            <option value="Member Dues">Member Dues</option>
+            <option value="Fundraising Events">Fundraising Events</option>
+            <option value="Corporate Sponsorship">Corporate Sponsorship</option>
+            <option value="University Funding">University Funding</option>
+            <option value="Donations">Donations</option>
+            <option value="Event Ticket Sales">Event Ticket Sales</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="amount">Amount *</label>
+          <input type="number" id="amount" step="0.01" min="0" placeholder="0.00" required>
+        </div>
+
+        <div class="form-group">
+          <label for="payer">Received From</label>
+          <input type="text" id="payer" placeholder="e.g., Chapter Members, Dell Technologies, Bake Sale">
+        </div>
+
+        <div class="form-group">
+          <label for="paymentMethod">Payment Method</label>
+          <select id="paymentMethod">
+            <option value="Cash">Cash</option>
+            <option value="Check">Check</option>
+            <option value="Venmo/CashApp">Venmo/CashApp</option>
+            <option value="Bank Transfer">Bank Transfer</option>
+            <option value="University Account">University Account</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="notes">Notes</label>
+          <textarea id="notes" rows="3" placeholder="Additional details..."></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Record Income</button>
+          <a href="budget-dashboard.html" class="btn-secondary">Cancel</a>
+        </div>
+      </form>
+
+      <div id="successMessage" class="success-message" style="display: none;">
+        ✓ Income recorded successfully!
+      </div>
+    </div>
+  </div>
+
+  <script src="income-form.js"></script>
+</body>
+</html>
