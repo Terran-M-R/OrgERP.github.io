@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members Directory - ORG Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+ 
 
+  <div class="page-header">
+    <h1>Members Directory</h1>
+    <p>View and manage organization members</p>
+  </div>
+
+  <div class="page-content">
+    <!-- Member Stats -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-number" id="totalMembers">0</span>
+        <span class="stat-label">Total Members</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" id="activeMembers">0</span>
+        <span class="stat-label">Active Members</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" id="boardMembers">0</span>
+        <span class="stat-label">Board Members</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" id="newThisSemester">0</span>
+        <span class="stat-label">New This Semester</span>
+      </div>
+    </div>
+
+    <!-- Search and Filter Controls -->
+    <div class="member-controls">
+      <input type="text" id="searchMembers" placeholder="Search members by name..." class="search-input">
+      <select id="roleFilter" class="filter-select">
+        <option value="all">All Roles</option>
+        <option value="President">President</option>
+        <option value="Vice President">Vice President</option>
+        <option value="Treasurer">Treasurer</option>
+        <option value="Secretary">Secretary</option>
+        <option value="Board Member">Board Member</option>
+        <option value="Member">Member</option>
+      </select>
+      <select id="statusFilter" class="filter-select">
+        <option value="all">All Status</option>
+        <option value="Active">Active</option>
+        <option value="Inactive">Inactive</option>
+      </select>
+      <a href="add-member.html" class="btn-primary">Add New Member</a>
+    </div>
+
+    <!-- Members Grid -->
+    <div id="membersGrid" class="members-grid">
+      <!-- Will be populated by JavaScript -->
+      <div class="no-members-message">
+        <p>No members found. <a href="add-member.html">Add your first member</a> or <button onclick="loadSampleMembers()" class="btn-link">load sample data</button>.</p>
+      </div>
+    </div>
+
+    <!-- Sample Data & Reset -->
+    <div style="margin-top: 30px; text-align: center; display: flex; gap: 10px; justify-content: center;">
+      <button onclick="loadSampleMembers()" class="btn-secondary">Load Sample Members</button>
+      <button onclick="clearMemberData()" class="btn-secondary">Clear All Members</button>
+    </div>
+  </div>
+
+
+
+  <script src="members.js"></script>
+</body>
+</html>
