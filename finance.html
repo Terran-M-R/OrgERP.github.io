@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Expense - Houston Everything</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Your navbar here -->
+  
+  <div class="page-header">
+    <h1>Submit New Expense</h1>
+    <p>Record a new organization expense for approval</p>
+  </div>
 
+  <div class="page-content">
+    <div class="form-container">
+      <form id="expenseForm">
+        <div class="form-group">
+          <label for="date">Date *</label>
+          <input type="date" id="date" required>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description *</label>
+          <input type="text" id="description" placeholder="e.g., NSBE Region V Conference Registration" required>
+        </div>
+
+        <div class="form-group">
+          <label for="category">Category *</label>
+          <select id="category" required>
+            <option value="">Select a category</option>
+            <option value="Conference Expenses">Conference Expenses</option>
+            <option value="Event Hosting">Event Hosting</option>
+            <option value="Professional Development">Professional Development</option>
+            <option value="Marketing & Outreach">Marketing & Outreach</option>
+            <option value="Administrative">Administrative</option>
+            <option value="Social Events">Social Events</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="subcategory">Subcategory</label>
+          <select id="subcategory">
+            <option value="">Select subcategory (optional)</option>
+            <option value="Conference Registration">Conference Registration</option>
+            <option value="Hotel Accommodation">Hotel Accommodation</option>
+            <option value="Transportation">Transportation</option>
+            <option value="Room Rental">Room Rental</option>
+            <option value="Food & Catering">Food & Catering</option>
+            <option value="Supplies">Supplies</option>
+            <option value="Guest Speakers">Guest Speakers</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="vendor">Vendor/Payee</label>
+          <input type="text" id="vendor" placeholder="e.g., NSBE National, Marriott Hotel, UTSA">
+        </div>
+
+        <div class="form-group">
+          <label for="amount">Amount *</label>
+          <input type="number" id="amount" step="0.01" min="0" placeholder="0.00" required>
+        </div>
+
+        <div class="form-group">
+          <label for="paymentMethod">Payment Method</label>
+          <select id="paymentMethod">
+            <option value="Chapter Funds">Chapter Funds</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Check">Check</option>
+            <option value="Reimbursement Request">Reimbursement Request</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="relatedEvent">Related Event/Activity</label>
+          <input type="text" id="relatedEvent" placeholder="e.g., NSBE Region V Fall Conference, General Body Meeting">
+        </div>
+
+        <div class="form-group">
+          <label for="notes">Notes</label>
+          <textarea id="notes" rows="3" placeholder="Additional details (attendees, purpose, etc.)..."></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Submit Expense</button>
+          <a href="budget-dashboard.html" class="btn-secondary">Cancel</a>
+        </div>
+      </form>
+
+      <div id="successMessage" class="success-message" style="display: none;">
+        ✓ Expense submitted successfully!
+      </div>
+    </div>
+  </div>
+
+  <script src="expense-form.js"></script>
+</body>
+</html>
